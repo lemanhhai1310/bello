@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -8,28 +7,213 @@
     <!--CSS-->
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/uikit-3.1.6/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/FlipClock-master/compiled/flipclock.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/clock.css">
     <!--JS-->
     <script src="assets/jquery/jquery-3.3.1.js"></script>
     <script src="assets/uikit-3.1.6/js/uikit.min.js"></script>
     <script src="assets/uikit-3.1.6/js/uikit-icons.min.js"></script>
+    <script src="assets/FlipClock-master/compiled/flipclock.min.js"></script>
 </head>
 <body>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+    <nav id="nav" class="uk-navbar-container" uk-navbar uk-sticky>
+
+        <div class="uk-navbar-center">
+
+            <a class="uk-navbar-item uk-logo" href="#"><img src="imgs/logo-bello-fb.svg" alt=""></a>
+
+        </div>
+
+
+    </nav>
+    <div class="uk-position-relative">
+        <img class="uk-position-center uk-position-z-index logo1" src="imgs/logo1.svg" alt="">
+        <div class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
+            <div>
+                <div class="uk-cover-container" uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
+                    <img src="imgs/banner1.svg" alt="" uk-cover>
+                    <canvas width="4000" height="4000"></canvas>
+                    <div class="uk-padding uk-position-top-center uk-text-center">
+                        <div class="title-x1 anima uk-margin">BELLO SUMMER</div>
+                        <div class="title-x2 anima">SALE</div>
+                    </div>
+                    <div class="uk-position-bottom-center">
+                        <img class="uk-width-1-1 anima" src="imgs/img1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
+                    <img src="imgs/banner2.png" alt="" uk-cover>
+                    <canvas width="4000" height="4000"></canvas>
+                    <div class="uk-position-center box-02 uk-text-center">
+                        <img class="uk-margin-medium-bottom anima" src="imgs/sale-off.svg" alt="">
+                        <div class="txt1 anima"><span class="s1">9H00 - 22H00</span> - <span
+                                class="s2">7,8,9/8/2019</span></div>
+                        <div class="txt1 c1 anima"><span>33 HÀNG KHAY, HÀ NỘI</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="block-sp-new" class="uk-section-xsmall">
+        <div class="uk-container">
+            <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                <h4 class="uk-card-title uk-text-uppercase">new model up to <span>40%</span></h4>
+                <div uk-slider="sets: false; autoplay: true; autoplay-interval: 5000;">
+
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m">
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2132 901-58.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2140-954.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2132 901-58 Copy.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2140-954 Copy.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2132 901-58 Copy 2.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2132 901-58.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2140-954.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2132 901-58 Copy.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2140-954 Copy.png" alt="">
+                                </li>
+                                <li class="uk-text-center">
+                                    <img src="imgs/sp-new/RB2132 901-58 Copy 2.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="">
+                            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slider-item="previous"><img
+                                    src="imgs/sp-new/left-arrow.svg" alt=""></a>
+                            <a class="uk-position-center-right-out uk-position-small" href="#"
+                               uk-slider-item="next"><img
+                                    src="imgs/sp-new/left-arrow copy.svg" alt=""></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="clock" class="uk-section-small clock-js">
+        <div class="uk-container">
+            <div class="uk-text-center box-10 uk-margin-medium-bottom">
+                <h2>ĐĂNG KÝ ONLINE</h2>
+                <div>NHẬN VÔ VÀN QUYỀN LỢI TỪ <a href="#">BELLO</a></div>
+            </div>
+            <div class="bg-countdown">
+                <div class="clock"></div>
+            </div>
+            <script>
+                var countdown = 1000000;
+                var clock = $('.clock').FlipClock(countdown, {
+                    clockFace: 'DailyCounter',
+                    countdown: true
+                });
+            </script>
+        </div>
+    </div>
+    <div class="uk-section-xsmall">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m" uk-grid
+                 uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
+                <div>
+                    <div class="uk-text-center uk-position-relative">
+                        <div class="box1_img uk-position-top-center">
+                            <img class="" src="imgs/king-cong/Bitmap1.svg" alt="">
+                        </div>
+                        <img class="imgx1 " src="imgs/king-cong/93481f8141215.560b7ef9337d1 copy.svg" alt="">
+                        <div class="box2_img uk-margin anima">
+                            <img src="imgs/king-cong/Ray-Ban-PNG-Image-Free-Download.svg" alt="">
+                        </div>
+                        <div class="uk-text-center uk-margin-medium-top">
+                            <a href="#" class="bello-btn-1 uk-button uk-button-default uk-border-pill">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-text-center uk-position-relative">
+                        <div class="box1_img uk-position-top-center">
+                            <img class="left" src="imgs/king-cong/Bitmap.svg" alt="">
+                        </div>
+                        <img class="imgx1 left" src="imgs/king-cong/93481f8141215.560b7ef9337d1 copy.svg" alt="">
+                        <div class="box2_img uk-margin anima">
+                            <img src="imgs/king-cong/gong-kinh-rayban-RX6317-2832.svg" alt="">
+                        </div>
+                        <div class="uk-text-center uk-margin-medium-top">
+                            <a href="#" class="bello-btn-1 uk-button uk-button-default uk-border-pill">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section">
+        <div class="uk-container uk-container-expand-right">
+            <div class="uk-grid-match uk-child-width-auto@m" uk-grid>
+                <div class="bell-width-1">
+
+                </div>
+                <div class="uk-width-expand">
+                    <div class="uk-card uk-card-body uk-background-norepeat uk-background-center-left"
+                         data-src="imgs/Rectangle Copy 27.svg" uk-img>
+                        <div class="uk-child-width-auto@m uk-flex-middle uk-grid-large" uk-grid>
+                            <div class="bell-width-2"><img src="imgs/72401-B1.svg" alt=""></div>
+                            <div class="uk-width-expand">
+                                <div class="uk-text-center uk-display-inline-block">
+                                    <div class="title-3 uk-margin">ĐỒNG GIÁ</div>
+                                    <div class="price-1 uk-margin">630.000 VNĐ</div>
+                                    <div class="title-4">CÙNG NHIỀU ƯU ĐÃI GIÁ TRỊ KHÁC</div>
+                                    <figure class="uk-margin-medium-top uk-margin-remove-bottom">
+                                        <img class="img3" src="imgs/parim_logo.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="uk-section-xsmall">
         <div class="uk-container">
             <div class="uk-child-width-1-2 uk-child-width-1-5@m uk-flex-center uk-grid-medium" uk-grid>
                 <div>
                     <div class="uk-card card-dm-sp">
-                        <img class="uk-position-top-center img1" src="imgs/dm_sp/Ray-Ban-PNG-Image-Free-Download.svg" alt="">
+                        <img class="uk-position-top-center img1" src="imgs/dm_sp/Ray-Ban-PNG-Image-Free-Download.svg"
+                             alt="">
                         <div class="uk-card-body uk-position-relative">
-                            <img class="uk-position-center img2" src="imgs/dm_sp/93481f8141215.560b7ef9337d1 copy 2.svg" alt="">
+                            <img class="uk-position-center img2" src="imgs/dm_sp/93481f8141215.560b7ef9337d1 copy 2.svg"
+                                 alt="">
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card card-dm-sp">
-                        <img class="uk-position-top-center img1" src="imgs/dm_sp/montblanc-052-tortoise-new-486-and-black-glasses-eyeglasses-frames-0-0-960-960.svg" alt="">
+                        <img class="uk-position-top-center img1"
+                             src="imgs/dm_sp/montblanc-052-tortoise-new-486-and-black-glasses-eyeglasses-frames-0-0-960-960.svg"
+                             alt="">
                         <div class="uk-card-body uk-position-relative">
                             <img class="uk-position-center img2" src="imgs/dm_sp/1200px-Montblanc_logo.svg.svg" alt="">
                         </div>
@@ -37,9 +221,12 @@
                 </div>
                 <div>
                     <div class="uk-card card-dm-sp">
-                        <img class="uk-position-top-center img1" src="imgs/dm_sp/13021_7387_Silhouette-M2062_Old-School-Eyeglasses_Men_Oversized_HipHop_Glasses.svg" alt="">
+                        <img class="uk-position-top-center img1"
+                             src="imgs/dm_sp/13021_7387_Silhouette-M2062_Old-School-Eyeglasses_Men_Oversized_HipHop_Glasses.svg"
+                             alt="">
                         <div class="uk-card-body uk-position-relative">
-                            <img class="uk-position-center img2" src="imgs/dm_sp/silhouette-frames-logo-SQ-1900px.svg" alt="">
+                            <img class="uk-position-center img2" src="imgs/dm_sp/silhouette-frames-logo-SQ-1900px.svg"
+                                 alt="">
                         </div>
                     </div>
                 </div>
@@ -47,13 +234,15 @@
                     <div class="uk-card card-dm-sp">
                         <img class="uk-position-top-center img1" src="imgs/dm_sp/2017012401729421fdmvtsj.svg" alt="">
                         <div class="uk-card-body uk-position-relative">
-                            <img class="uk-position-center img2" src="imgs/dm_sp/d7563fb3e84bdff585e163ac9bdfa765.svg" alt="">
+                            <img class="uk-position-center img2" src="imgs/dm_sp/d7563fb3e84bdff585e163ac9bdfa765.svg"
+                                 alt="">
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card card-dm-sp">
-                        <img class="uk-position-top-center img1" src="imgs/dm_sp/4d595058285d41c36d52d717a400914e.svg" alt="">
+                        <img class="uk-position-top-center img1" src="imgs/dm_sp/4d595058285d41c36d52d717a400914e.svg"
+                             alt="">
                         <div class="uk-card-body uk-position-relative">
                             <img class="uk-position-center img2" src="imgs/dm_sp/parim_logo_B.svg" alt="">
                         </div>
@@ -64,7 +253,8 @@
     </div>
     <div class="block-sp uk-section-small">
         <div class="uk-container">
-            <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-medium uk-grid-match" uk-grid uk-scrollspy="target: .card-sp-1; repeat: true; cls: animate; delay: 200">
+            <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-medium uk-grid-match"
+                 uk-grid uk-scrollspy="target: .card-sp-1; repeat: true; cls: animate; delay: 200">
                 <div>
                     <div class="uk-card card-sp-1 uk-box-shadow-hover-medium uk-card-default uk-card-body">
                         <div class="uk-position-top-left">
@@ -82,7 +272,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -98,7 +290,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -114,7 +308,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -130,7 +326,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -152,7 +350,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -168,7 +368,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -184,7 +386,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -200,7 +404,9 @@
                         </div>
                         <hr class="uk-margin-small">
                         <div class="uk-grid-small uk-flex-between uk-flex-middle uk-child-width-auto" uk-grid>
-                            <div class="price-sp"><del>-1.200,000 đ</del></div>
+                            <div class="price-sp">
+                                <del>-1.200,000 đ</del>
+                            </div>
                             <div class="price-sp"><span>630,000 đ</span></div>
                         </div>
                     </div>
@@ -210,326 +416,368 @@
                 <button type="button" class="bello-btn-1 uk-button uk-button-default uk-border-pill">Xem thêm</button>
             </div>
         </div>
-    </div><div class="block-01 uk-section-small">
-    <div class="uk-container">
-        <figure class="uk-text-center">
-            <img src="imgs/RB-ShoppingGuide_herobanner_042516.svg" alt="">
-            <figcaption class="box-01 uk-margin uk-flex-inline uk-flex-column uk-flex-center uk-flex-middle">
-                <div class="title-1 uk-margin-small">Combo gọng kính và mắt kính</div>
-                <div class="title-2">CHỈ CÓ</div>
-            </figcaption>
-            <div class="price uk-margin uk-text-center">630.000 VNĐ</div>
-        </figure>
     </div>
-</div><div class="block-dky uk-section uk-background-cover uk-background-center-center" data-src="imgs/bg-dky.svg" uk-img uk-parallax="bgy: -200">
-    <div class="uk-container">
-        <div class="uk-card uk-card-default uk-card-body uk-position-relative">
-            <img class="uk-position-top-right uk-position-z-index" src="imgs/gift-ico.svg" alt="">
-            <div class="uk-position-relative uk-flex-middle uk-position-z-index" uk-grid>
-                <div class="uk-width-1-3@m">
-                    <figure class="uk-text-center"><img class="bell-logo" src="imgs/logo-bello-fb.svg" alt=""></figure>
-                    <ul class="uk-list">
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Đo thị lực miễn phí tiêu chuẩn quốc tế.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Vệ sinh kính bằng máy siêu âm, cân chỉnh chăm sóc khách hàng sử dụng trọn đời.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng bộ vệ sinh kính gồ: Khăn lau chuyên dụng , bao kính thuận lợi , dung dịch vệ sinh kính.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Ưu đãi lớn khi đăng ký tham gia chương trình.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng ngay <span>Voucher 500k</span> ngay khi đăng ký tham gia.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Giảm thêm 10% cho sản phẩm thứ 2.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng ngay áo thun bello khi mua hoá đơn trên <span>3 triệu</span>.</li>
-                        <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng ngay mũ bảo hiểm Rayban khi mua hoá đơn trên <span>5 triệu</span>.</li>
-                    </ul>
-                    <figure class="uk-text-center"><img src="imgs/—Pngtree—black ray-ban sunglasses_1752115.svg" alt=""></figure>
-                </div>
-                <div class="uk-width-expand">
-                    <div uk-grid>
-                        <div class="uk-width-1-1@m">
-                            <form class="form-1">
-                                <fieldset class="uk-fieldset">
-                                    <legend class="uk-legend uk-margin-medium">ĐĂNG KÝ NHẬN ƯU ĐÃI</legend>
+    <div class="block-01 uk-section-small">
+        <div class="uk-container">
+            <figure class="uk-text-center">
+                <img src="imgs/RB-ShoppingGuide_herobanner_042516.svg" alt="">
+                <figcaption class="box-01 uk-margin uk-flex-inline uk-flex-column uk-flex-center uk-flex-middle">
+                    <div class="title-1 uk-margin-small">Combo gọng kính và mắt kính</div>
+                    <div class="title-2">CHỈ CÓ</div>
+                </figcaption>
+                <div class="price uk-margin uk-text-center">630.000 VNĐ</div>
+            </figure>
+        </div>
+    </div>
+    <div id="block-dky" class="block-dky uk-section uk-background-cover uk-background-center-center"
+         data-src="imgs/bg-dky.svg" uk-img uk-parallax="bgy: -200">
+        <div class="uk-container">
+            <div class="uk-card uk-card-default uk-card-body uk-position-relative">
+                <img class="uk-position-top-right uk-position-z-index" src="imgs/gift-ico.svg" alt="">
+                <div class="uk-position-relative uk-flex-middle uk-position-z-index" uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <figure class="uk-text-center"><img class="bell-logo" src="imgs/logo-bello-fb.svg" alt="">
+                        </figure>
+                        <ul class="uk-list">
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Đo thị lực miễn phí
+                                tiêu chuẩn quốc tế.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Vệ sinh kính bằng
+                                máy siêu âm, cân chỉnh chăm sóc khách hàng sử dụng trọn đời.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng bộ vệ sinh
+                                kính gồ: Khăn lau chuyên dụng , bao kính thuận lợi , dung dịch vệ sinh kính.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Ưu đãi lớn khi đăng
+                                ký tham gia chương trình.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng ngay <span>Voucher 500k</span>
+                                ngay khi đăng ký tham gia.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Giảm thêm 10% cho
+                                sản phẩm thứ 2.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng ngay áo thun
+                                bello khi mua hoá đơn trên <span>3 triệu</span>.
+                            </li>
+                            <li><img class="uk-margin-small-right" src="imgs/checked-ico.svg" alt="">Tặng ngay mũ bảo
+                                hiểm Rayban khi mua hoá đơn trên <span>5 triệu</span>.
+                            </li>
+                        </ul>
+                        <figure class="uk-text-center"><img src="imgs/—Pngtree—black ray-ban sunglasses_1752115.svg"
+                                                            alt=""></figure>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div uk-grid>
+                            <div class="uk-width-1-1@m">
+                                <form class="form-1">
+                                    <fieldset class="uk-fieldset">
+                                        <legend class="uk-legend uk-margin-medium">ĐĂNG KÝ NHẬN ƯU ĐÃI</legend>
 
-                                    <div class="uk-padding box-form-1">
-                                        <div class="uk-margin">
-                                            <input class="uk-input uk-border-rounded" type="text" placeholder="Họ và tên">
-                                        </div>
-
-                                        <div class="uk-margin">
-                                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
-                                                <select>
-                                                    <option value="">Giới tính</option>
-                                                    <option value="1">Nam</option>
-                                                    <option value="2">Nữ</option>
-                                                </select>
-                                                <button class="uk-button bello-btn-2 uk-border-rounded uk-width-1-1 uk-text-left uk-button-default" type="button" tabindex="-1">
-                                                    <span></span>
-                                                    <span uk-icon="" class="uk-position-center-right"><img src="imgs/ico-down.svg" alt=""></span>
-                                                </button>
+                                        <div class="uk-padding box-form-1">
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-border-rounded" type="text"
+                                                       placeholder="Họ và tên">
                                             </div>
-                                        </div>
 
-                                        <div class="uk-margin">
-                                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
-                                                <select>
-                                                    <option value="">Năm sinh</option>
-                                                    <option value="1">1991</option>
-                                                    <option value="2">1992</option>
-                                                </select>
-                                                <button class="uk-button bello-btn-2 uk-border-rounded uk-width-1-1 uk-text-left uk-button-default" type="button" tabindex="-1">
-                                                    <span></span>
-                                                    <span uk-icon="" class="uk-position-center-right"><img src="imgs/ico-down.svg" alt=""></span>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div class="uk-margin">
-                                            <input class="uk-input uk-border-rounded" type="text" placeholder="Email">
-                                        </div>
-
-                                        <div class="uk-margin">
-                                            <input class="uk-input uk-border-rounded" type="text" placeholder="Điện thoại">
-                                        </div>
-
-                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                                            <label>
-                                                <div class="uk-grid-small" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <input class="uk-checkbox" type="checkbox" checked>
-                                                    </div>
-                                                    <div class="uk-width-expand">
-                                                        Tôi xác nhận thông tin đăng ký ở trên là chính xác. Tôi đồng ý nhận thông tin khuyến mãi từ chương trình.
-                                                    </div>
+                                            <div class="uk-margin">
+                                                <div class="uk-width-1-1"
+                                                     uk-form-custom="target: > * > span:first-child">
+                                                    <select>
+                                                        <option value="">Giới tính</option>
+                                                        <option value="1">Nam</option>
+                                                        <option value="2">Nữ</option>
+                                                    </select>
+                                                    <button class="uk-button bello-btn-2 uk-border-rounded uk-width-1-1 uk-text-left uk-button-default"
+                                                            type="button" tabindex="-1">
+                                                        <span></span>
+                                                        <span uk-icon="" class="uk-position-center-right"><img
+                                                                src="imgs/ico-down.svg" alt=""></span>
+                                                    </button>
                                                 </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="uk-margin uk-text-center">
-                                        <button type="submit" class="bello-btn-1 uk-button uk-button-default uk-border-pill">Đăng ký</button>
-                                    </div>
+                                            </div>
 
-                                </fieldset>
-                            </form>
+                                            <div class="uk-margin">
+                                                <div class="uk-width-1-1"
+                                                     uk-form-custom="target: > * > span:first-child">
+                                                    <select>
+                                                        <option value="">Năm sinh</option>
+                                                        <option value="1">1991</option>
+                                                        <option value="2">1992</option>
+                                                    </select>
+                                                    <button class="uk-button bello-btn-2 uk-border-rounded uk-width-1-1 uk-text-left uk-button-default"
+                                                            type="button" tabindex="-1">
+                                                        <span></span>
+                                                        <span uk-icon="" class="uk-position-center-right"><img
+                                                                src="imgs/ico-down.svg" alt=""></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-border-rounded" type="text"
+                                                       placeholder="Email">
+                                            </div>
+
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-border-rounded" type="text"
+                                                       placeholder="Điện thoại">
+                                            </div>
+
+                                            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                                <label>
+                                                    <div class="uk-grid-small" uk-grid>
+                                                        <div class="uk-width-auto">
+                                                            <input class="uk-checkbox" type="checkbox" checked>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            Tôi xác nhận thông tin đăng ký ở trên là chính xác. Tôi đồng
+                                                            ý nhận thông tin khuyến mãi từ chương trình.
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin uk-text-center">
+                                            <button type="submit"
+                                                    class="bello-btn-1 uk-button uk-button-default uk-border-pill">Đăng
+                                                ký
+                                            </button>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div><div class="uk-position-relative">
-    <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/01.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
+    <div class="uk-position-relative">
+        <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/01.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/02.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/03.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/03_1.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/09.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/10.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/11.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/12.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/05.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/06.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/07.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/08.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/13.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/14.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/15.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/16.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/02.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
+        <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/05.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/06.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/07.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/08.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/13.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/14.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/15.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/bottom/16.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/01.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/02.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/03.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/03_1.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/09.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/10.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/11.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container" style="width: 160px;">
+                    <img src="imgs/kh_user/top/12.jpg" alt="" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/03.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/03_1.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/09.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/10.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/11.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/12.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/05.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/06.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/07.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/08.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/13.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/14.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/15.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/16.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-middle card-kh uk-card-body uk-display-inline-block uk-position-center uk-text-center"
+             style="width: 320px; height: 320px;">
+            <figure class="uk-text-center"><img class="bell-logo" src="imgs/logo-bello-fb.svg" alt=""></figure>
+            <h2 class="uk-card-title kh-title uk-text-uppercase">kính <br> hàng hiệu <br> giá sốc!</h2>
         </div>
     </div>
-    <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/05.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
+    <footer id="bello-footer">
+        <div class="bello-top-f uk-text-center uk-section-xsmall">
+            <div class="uk-container">
+                <figure><a href="#"><img src="imgs/logo-bello-f.png" alt=""></a></figure>
+                <address>
+                    <div>• Ngày : 7,8,9/08/2019</div>
+                    <div>• Địa chỉ : cửa hàng 33 Hàng Khay, Hà Nội</div>
+                </address>
             </div>
         </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/06.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
+        <div class="bello-bottom-f uk-text-center">
+            <div class="uk-container">
+                © 2019 by Bello. All Rights Reserved.
             </div>
         </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/07.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/08.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/13.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/14.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/15.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/bottom/16.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/01.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/02.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/03.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/03_1.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/09.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/10.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/11.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="uk-cover-container" style="width: 160px;">
-                <img src="imgs/kh_user/top/12.jpg" alt="" uk-cover>
-                <canvas width="200" height="200"></canvas>
-            </div>
+    </footer>
+    <div class="uk-position-fixed voucher uk-position-bottom-right uk-position-z-index"
+         uk-scrollspy-nav="closest: div; scroll: true">
+        <div><a href="#block-dky"><img src="images/z1471391592087_8f1c465fa4304c1ec7761155267e7bad.jpg" alt=""></a>
         </div>
     </div>
-    <div class="uk-card uk-card-default uk-flex uk-flex-middle card-kh uk-card-body uk-display-inline-block uk-position-center uk-text-center" style="width: 320px; height: 320px;">
-        <figure class="uk-text-center"><img class="bell-logo" src="imgs/logo-bello-fb.svg" alt=""></figure>
-        <h2 class="uk-card-title kh-title uk-text-uppercase">kính <br> hàng hiệu <br> giá sốc!</h2>
-    </div>
-</div><footer id="bello-footer">
-    <div class="bello-top-f uk-text-center uk-section-xsmall">
-        <div class="uk-container">
-            <figure><a href="#"><img src="imgs/logo-bello-f.png" alt=""></a></figure>
-            <address>
-                <div>•  Ngày : 7,8,9/08/2019</div>
-                <div>• Địa chỉ : cửa hàng 33 Hàng Khay, Hà Nội</div>
-            </address>
-        </div>
-    </div>
-    <div class="bello-bottom-f uk-text-center">
-        <div class="uk-container">
-            © 2019 by Bello. All Rights Reserved.
-        </div>
-    </div>
-</footer>
 </section>
 </body>
 </html>
