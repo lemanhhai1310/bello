@@ -30,12 +30,9 @@
                         </ul>
                     </div>
 
-                    <div class="uk-hidden@s uk-light">
-                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    </div>
 
-                    <div class="uk-visible@s">
+
+                    <div class="">
                         <a class="uk-position-center-left-out uk-position-small" href="#" uk-slider-item="previous"><img
                                     src="imgs/sp-new/left-arrow.svg" alt=""></a>
                         <a class="uk-position-center-right-out uk-position-small" href="#" uk-slider-item="next"><img

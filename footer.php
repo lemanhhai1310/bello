@@ -15,7 +15,7 @@
     </div>
 </footer>
 <div class="uk-position-fixed voucher uk-position-bottom-right uk-position-z-index" uk-scrollspy-nav="closest: div; scroll: true">
-    <div><a href="#block-dky"><img src="imgs/bt-scoll-vocuher.png" alt=""></a></div>
+    <div><a href="#block-dky"><img src="images/z1471391592087_8f1c465fa4304c1ec7761155267e7bad.jpg" alt=""></a></div>
 </div>
 </section>
 </body>
