@@ -1,0 +1,23 @@
+.box1_img{
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .left{
+    position: relative;
+    top: 40px !important;
+  }
+}
+.box2_img{
+  height: 181px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgx1{
+  position: relative;
+  left: 55px;
+  &.left{
+    left: 85px;
+  }
+}
