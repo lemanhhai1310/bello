@@ -39,7 +39,7 @@
 </div>
 <div class="block-sp uk-section-small">
     <div class="uk-container">
-        <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-medium uk-grid-match" uk-grid uk-scrollspy="target: .card-sp-1; repeat: true; cls: animate; delay: 200">
+        <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-medium uk-grid-match" uk-grid uk-scrollspy="target: .card-sp-1; repeat: true; cls: animate; delay: 200">
             <?php
             $data = array(
                 array(

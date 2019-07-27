@@ -1,6 +1,3 @@
-.flip-clock-dot{
-  display: none;
-}
 .box-10{
   h2{
     font-size: 40px;
@@ -11,6 +8,9 @@
   div{
     font-size: 22px;
     line-height: 0.72;
+    @media(max-width: 560px){
+      line-height: 1;
+    }
     letter-spacing: 6px;
     color: #000000;
     font-family:'SFCompactDisplay-Light';

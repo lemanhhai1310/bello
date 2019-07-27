@@ -9,22 +9,17 @@
     <link rel="stylesheet" href="assets/uikit-3.1.6/css/uikit.min.css">
     <link rel="stylesheet" href="assets/FlipClock-master/compiled/flipclock.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/clock.css">
     <!--JS-->
     <script src="assets/jquery/jquery-3.3.1.js"></script>
     <script src="assets/uikit-3.1.6/js/uikit.min.js"></script>
     <script src="assets/uikit-3.1.6/js/uikit-icons.min.js"></script>
     <script src="assets/FlipClock-master/compiled/flipclock.min.js"></script>
+    <script src="assets/FlipClock-master/src/flipclock/js/lang/vi-vn.js"></script>
 </head>
 <body>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
 <nav id="nav" class="uk-navbar-container" uk-navbar  uk-sticky>
-
     <div class="uk-navbar-center">
-
-        <a class="uk-navbar-item uk-logo" href="#"><img src="imgs/logo-bello-fb.svg" alt=""></a>
-
+        <a class="uk-navbar-item uk-logo" href="."><img src="imgs/logo-bello-fb.svg" alt=""></a>
     </div>
-
-
 </nav>

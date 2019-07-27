@@ -5,7 +5,7 @@
             <div class="uk-cover-container" uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
                 <img src="imgs/banner1.svg" alt="" uk-cover>
                 <canvas width="4000" height="4000"></canvas>
-                <div class="uk-padding uk-position-top-center uk-text-center">
+                <div class="uk-padding uk-position-top-center uk-text-center uk-position-z-index">
                     <div class="title-x1 anima uk-margin">BELLO SUMMER</div>
                     <div class="title-x2 anima">SALE</div>
                 </div>
