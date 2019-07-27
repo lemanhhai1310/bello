@@ -1,0 +1,31 @@
+.bell-width-1{
+  @media(min-width: 960px){
+    min-width: 320px;
+  }
+}
+.bell-width-2{
+  @media(min-width: 960px){
+    width: 520px;
+    margin-left: -235px;
+  }
+}
+.price-1{
+  @extend .price;
+}
+.title-3{
+  line-height: 0.57;
+  letter-spacing: 4px;
+  color: #000;
+  font-family:'SFCompactDisplay-Medium';
+  font-size: 28px;
+}
+.title-4{
+  line-height: 1.44;
+  letter-spacing: 7px;
+  color: #000;
+  font-family:'SFCompactDisplay-Medium';
+  font-size: 14px;
+}
+.img3{
+  width: 130px;
+}
