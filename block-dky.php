@@ -1,4 +1,4 @@
-<div class="block-dky uk-section uk-background-cover uk-background-center-center" data-src="imgs/bg-dky.svg" uk-img uk-parallax="bgy: -200">
+<div id="block-dky" class="block-dky uk-section uk-background-cover uk-background-center-center" data-src="imgs/bg-dky.svg" uk-img uk-parallax="bgy: -200">
     <div class="uk-container">
         <div class="uk-card uk-card-default uk-card-body uk-position-relative">
             <img class="uk-position-top-right uk-position-z-index" src="imgs/gift-ico.svg" alt="">

@@ -1,6 +1,6 @@
 <div class="uk-section-xsmall">
     <div class="uk-container">
-        <div class="uk-child-width-1-2@m" uk-grid>
+        <div class="uk-child-width-1-2@m" uk-grid uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
             <?php
             $data = array(
                 array(
@@ -20,7 +20,7 @@
                         <img class="<?= isset($v['left']) ? 'left' : '' ?>" src="<?= $v['img1'] ?>" alt="">
                     </div>
                     <img class="imgx1 <?= isset($v['left']) ? 'left' : '' ?>" src="imgs/king-cong/93481f8141215.560b7ef9337d1 copy.svg" alt="">
-                    <div class="box2_img uk-margin">
+                    <div class="box2_img uk-margin anima">
                         <img src="<?= $v['img2'] ?>" alt="">
                     </div>
                     <div class="uk-text-center uk-margin-medium-top">

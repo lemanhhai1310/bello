@@ -19,3 +19,37 @@
     font-family:'SFCompactDisplay-Regular';
   }
 }
+.voucher{
+  img{
+    width: 150px;
+
+    visibility: visible;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: swing;
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg)
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg)
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg)
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg)
+  }
+  to {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+}

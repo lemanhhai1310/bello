@@ -1,0 +1,17 @@
+#block-sp-new{
+  margin-top: -55px;
+  .uk-card{
+    box-shadow: 0 5px 38px 2px rgba(11, 28, 42, 0.15);
+    border: solid 1px #ebebeb;
+    padding: 20px 70px 30px !important;
+    .uk-card-title{
+      font-size: 15px;
+      line-height: 1.3;
+      letter-spacing: 5.56px;
+      font-family:'SFCompactDisplay-Medium';
+      span{
+        color: #ed1b23;
+      }
+    }
+  }
+}

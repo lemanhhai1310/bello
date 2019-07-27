@@ -1,0 +1,210 @@
+
+.flip-clock-wrapper ul li a div div.inn{
+    color:#fff;
+    font-family:'SteelTongs';
+    font-size: 90px;
+}
+/*
+CLOCK
+*/
+#clock .bg-countdown{
+    background: url(../images/bg-countdown.png) repeat-x;
+    width: 720px;
+    background-size: 196px;
+    height: 145px;
+    margin: 0 auto;
+    position: relative;
+}
+#clock .border {
+    padding: 30px 0;
+}
+.flip-clock-wrapper .flip{
+    box-shadow:none;
+}
+.flip-clock-divider {
+    width: 72px;
+}
+.flip-clock-wrapper {
+    margin: 0px;
+}
+.flip-clock-wrapper ul{
+    border-radius: 0px;
+    width: 46px;
+    margin-left: 11px;
+    margin-top: 10px;
+    background: #3d3d3d;
+}
+.flip-clock-divider .flip-clock-label {
+    position: absolute;
+    bottom: -29px;
+    right: -80px;
+    color: white;
+    text-shadow: none;
+    font-size: 14px;
+    top:initial;
+}
+
+/*
+BRAND
+*/
+
+
+
+
+#clock .bg-countdown {
+    /* background: url(../images/bg-countdown.png) repeat-x; */
+    width: 580px;
+    background-size: 157px;
+    height: 115px;
+}
+.flip-clock-wrapper ul li a div div.inn {
+    font-size: 70px;
+}
+.flip-clock-wrapper ul{
+    height: 70px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-right:1px;
+}
+.flip-clock-wrapper ul li{
+    line-height: 70px;
+}
+.flip-clock-wrapper ul{
+    width: 40px;
+}
+.flip-clock-divider{
+    width: 59px;
+}
+.flip-clock-divider .flip-clock-label {
+    bottom: -7px;
+    right: -69px;
+}
+@media (max-width: 1024px ) {
+
+    #clock .bg-countdown {
+        background: url(../images/bg-countdown.png) repeat-x;
+        width: 580px;
+        background-size: 157px;
+        height: 115px;
+    }
+    .flip-clock-wrapper ul li a div div.inn {
+        font-size: 70px;
+    }
+    .flip-clock-wrapper ul{
+        height: 70px;
+        margin-left: 8px;
+        margin-top: 8px;
+        margin-right:1px;
+    }
+    .flip-clock-wrapper ul li{
+        line-height: 70px;
+    }
+    .flip-clock-wrapper ul{
+        width: 40px;
+    }
+    .flip-clock-divider{
+        width: 59px;
+    }
+    .flip-clock-divider .flip-clock-label {
+        bottom: -7px;
+        right: -69px;
+    }
+}
+
+
+
+
+
+@media (max-width: 767px ) {
+    #clock .border {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 667px ) {
+    #clock .bg-countdown {
+        background: url(../images/bg-countdown.png) repeat-x;
+        width: 490px;
+        background-size: 133px;
+        height: 115px;
+    }
+    .flip-clock-wrapper ul li a div div.inn {
+        font-size: 60px;
+    }
+    .flip-clock-wrapper ul li {
+        line-height: 60px;
+    }
+    .flip-clock-divider {
+        width: 50px;
+    }
+    .flip-clock-divider .flip-clock-label {
+        bottom: 12px;
+        right: -60px;
+        font-size: 12px;
+    }
+    .flip-clock-wrapper ul{
+        height: 60px;
+        margin-left: 10px;
+    }
+    .flip-clock-wrapper ul {
+        width: 25px;
+    }
+    .flip-clock-wrapper .flip {
+        padding: 15px;
+    }
+}
+
+
+
+@media (max-width: 441px ) {
+    #clock .border {
+        padding: 15px 0;
+    }
+    #clock .bg-countdown {
+        background: url(../images/bg-countdown.png) repeat-x;
+        width: 320px;
+        background-size: 86px;
+        height: 62px;
+    }
+    .flip-clock-divider {
+        float: left;
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 72px;
+    }
+    .flip-clock-divider{
+
+        height: 72px;
+    }
+    .flip-clock-divider .flip-clock-label {
+        bottom: 12px;
+        right: -38px;
+        font-size: 10px;
+    }
+    .flip-clock-wrapper ul li a div div.inn {
+        font-size: 35px;    line-height: 40px;
+    }
+    .flip-clock-wrapper .flip{
+        padding: 0px;
+        margin: 3px 1px 3px 4px;
+        height: 40px;
+        width: 22px;
+    }
+    .flip-clock-divider {
+        width: 32px;
+    }
+
+}
+
+@media (max-width: 411px ) {
+
+
+    #clock .container{
+        padding: 0px;
+
+    }
+
+}

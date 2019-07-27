@@ -12,6 +12,13 @@
   font-weight:normal;
   font-style:normal;
 }
+/*====================[SFCompactDisplay]====================*/
+@font-face{
+  font-family:'SteelTongs';
+  src:url('../fonts/SteelTongs.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
 @font-face{
   font-family:'SFCompactDisplay-Medium';
   src:url('../fonts/SFCompactDisplay1/SF-Compact-Display-Medium.otf') format('truetype');
@@ -45,6 +52,12 @@
 @font-face{
   font-family:'SFCompactDisplay-Semibold';
   src:url('../fonts/SFCompactDisplay1/SF-Compact-Display-Semibold.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SFCompactDisplay-Black';
+  src:url('../fonts/SFCompactDisplay1/SF-Compact-Display-Black.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }

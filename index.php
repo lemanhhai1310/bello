@@ -1,4 +1,6 @@
 <?php include "header.php"; ?>
+<?php include "block-banner.php"; ?>
+<?php include "block-sp-new.php"; ?>
 <?php include "block-clock.php"; ?>
 <?php include "block-02.php"; ?>
 <?php include "block-donggia.php"; ?>
