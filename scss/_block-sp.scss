@@ -1,0 +1,104 @@
+.card-dm-sp{
+  cursor: pointer;
+  &:hover{
+    .uk-card-body{
+      border-color: #e32828;
+    }
+  }
+  .img1{
+    top: -20px !important;
+    z-index: 2;
+  }
+  .img2{
+    top: 60% !important;
+  }
+  .uk-card-body{
+    height: 80px;
+    border: solid 4px #eeeeee;
+    padding: 0;
+  }
+}
+.price-sp{
+  del{
+    line-height: 2.13;
+    color: #aaaaaa;
+  }
+  span{
+    line-height: 1.33;
+    color: #e02020;
+  }
+}
+.info-sp{
+  color: #191919;
+  line-height: 1.33;
+  a{
+    color: #191919;
+  }
+}
+.block-sp{
+  background-color: #fafafa;
+  .uk-grid{
+    margin-left: -$width-10;
+    @media(min-width: 960px){
+      margin-left: -$width-25;
+    }
+    >*{
+      padding-left: $width-10;
+      @media(min-width: 960px){
+        padding-left: $width-25;
+      }
+    }
+    >.uk-grid-margin{
+      margin-top: $width-10;
+      @media(min-width: 960px){
+        margin-top: $width-25;
+      }
+    }
+  }
+}
+.card-sp-1{
+  .arrow-left{
+    width: 0;
+    height: 0;
+    border-bottom: 77px solid transparent;
+
+    border-left: 77px solid #e32828;
+    & + span{
+      color: #FFFFFF;
+      left: 30%;
+      top: 30%;
+      line-height: 1.79;
+      font-family:'SFCompactDisplay-Bold';
+      font-size: 13px;
+    }
+  }
+  box-shadow: none;
+  padding: 20px;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateY(65px);
+  transform: translateY(65px);
+  &.animate{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: opacity 0.8s ease-in-out,-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1),-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  &:hover{
+    box-shadow: 0 5px 38px 2px rgba(11, 28, 42, 0.15);
+  }
+  hr{
+    border-color: #000;
+    opacity: 0.1;
+  }
+}
+.box-img{
+  border: solid 4px #eeeeee;
+  min-height: 204px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
