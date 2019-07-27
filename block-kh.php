@@ -1,5 +1,5 @@
 <div class="uk-position-relative">
-    <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
+    <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center move_img1" uk-grid>
         <?php
         $data = array(
             'imgs/kh_user/top/01.jpg',
@@ -29,7 +29,7 @@
         </div>
         <?php endforeach; ?>
     </div>
-    <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
+    <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center move_img2" uk-grid>
         <?php
         $data = array(
             'imgs/kh_user/bottom/05.jpg',

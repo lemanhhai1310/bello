@@ -31,26 +31,3 @@
     animation-name: swing;
   }
 }
-
-@keyframes swing {
-  20% {
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg)
-  }
-  40% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg)
-  }
-  60% {
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg)
-  }
-  80% {
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg)
-  }
-  to {
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
-  }
-}
