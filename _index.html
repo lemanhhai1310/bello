@@ -9,24 +9,19 @@
     <link rel="stylesheet" href="assets/uikit-3.1.6/css/uikit.min.css">
     <link rel="stylesheet" href="assets/FlipClock-master/compiled/flipclock.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/clock.css">
     <!--JS-->
     <script src="assets/jquery/jquery-3.3.1.js"></script>
     <script src="assets/uikit-3.1.6/js/uikit.min.js"></script>
     <script src="assets/uikit-3.1.6/js/uikit-icons.min.js"></script>
     <script src="assets/FlipClock-master/compiled/flipclock.min.js"></script>
+    <script src="assets/FlipClock-master/src/flipclock/js/lang/vi-vn.js"></script>
 </head>
 <body>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
     <nav id="nav" class="uk-navbar-container" uk-navbar uk-sticky>
-
         <div class="uk-navbar-center">
-
-            <a class="uk-navbar-item uk-logo" href="#"><img src="imgs/logo-bello-fb.svg" alt=""></a>
-
+            <a class="uk-navbar-item uk-logo" href="."><img src="imgs/logo-bello-fb.svg" alt=""></a>
         </div>
-
-
     </nav>
     <div class="uk-position-relative">
         <img class="uk-position-center uk-position-z-index logo1" src="imgs/logo1.svg" alt="">
@@ -35,7 +30,7 @@
                 <div class="uk-cover-container" uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
                     <img src="imgs/banner1.svg" alt="" uk-cover>
                     <canvas width="4000" height="4000"></canvas>
-                    <div class="uk-padding uk-position-top-center uk-text-center">
+                    <div class="uk-padding uk-position-top-center uk-text-center uk-position-z-index">
                         <div class="title-x1 anima uk-margin">BELLO SUMMER</div>
                         <div class="title-x2 anima">SALE</div>
                     </div>
@@ -122,14 +117,13 @@
                 <h2>ĐĂNG KÝ ONLINE</h2>
                 <div>NHẬN VÔ VÀN QUYỀN LỢI TỪ <a href="#">BELLO</a></div>
             </div>
-            <div class="bg-countdown">
-                <div class="clock"></div>
-            </div>
+            <div class="clock uk-flex uk-flex-center uk-flex-middle uk-margin-remove"></div>
             <script>
                 var countdown = 1000000;
                 var clock = $('.clock').FlipClock(countdown, {
                     clockFace: 'DailyCounter',
-                    countdown: true
+                    countdown: true,
+                    language: 'vi',
                 });
             </script>
         </div>
@@ -171,14 +165,14 @@
     </div>
     <div class="uk-section">
         <div class="uk-container uk-container-expand-right">
-            <div class="uk-grid-match uk-child-width-auto@m" uk-grid>
+            <div class="uk-grid-match uk-child-width-auto@s" uk-grid>
                 <div class="bell-width-1">
 
                 </div>
                 <div class="uk-width-expand">
                     <div class="uk-card uk-card-body uk-background-norepeat uk-background-center-left"
                          data-src="imgs/Rectangle Copy 27.svg" uk-img>
-                        <div class="uk-child-width-auto@m uk-flex-middle uk-grid-large" uk-grid>
+                        <div class="uk-child-width-auto@s uk-flex-middle uk-grid-large" uk-grid>
                             <div class="bell-width-2"><img src="imgs/72401-B1.svg" alt=""></div>
                             <div class="uk-width-expand">
                                 <div class="uk-text-center uk-display-inline-block">
@@ -253,7 +247,7 @@
     </div>
     <div class="block-sp uk-section-small">
         <div class="uk-container">
-            <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-medium uk-grid-match"
+            <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-medium uk-grid-match"
                  uk-grid uk-scrollspy="target: .card-sp-1; repeat: true; cls: animate; delay: 200">
                 <div>
                     <div class="uk-card card-sp-1 uk-box-shadow-hover-medium uk-card-default uk-card-body">
@@ -430,7 +424,7 @@
         </div>
     </div>
     <div id="block-dky" class="block-dky uk-section uk-background-cover uk-background-center-center"
-         data-src="imgs/bg-dky.svg" uk-img uk-parallax="bgy: -200">
+         data-src="imgs/bg-dky.svg" uk-img uk-parallax="bgy: -20">
         <div class="uk-container">
             <div class="uk-card uk-card-default uk-card-body uk-position-relative">
                 <img class="uk-position-top-right uk-position-z-index" src="imgs/gift-ico.svg" alt="">
@@ -555,7 +549,7 @@
         </div>
     </div>
     <div class="uk-position-relative">
-        <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
+        <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center move_img1" uk-grid>
             <div>
                 <div class="uk-cover-container" style="width: 160px;">
                     <img src="imgs/kh_user/top/01.jpg" alt="" uk-cover>
@@ -653,7 +647,7 @@
                 </div>
             </div>
         </div>
-        <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center" uk-grid>
+        <div class="uk-child-width-auto uk-grid-collapse uk-flex-nowrap uk-flex-center move_img2" uk-grid>
             <div>
                 <div class="uk-cover-container" style="width: 160px;">
                     <img src="imgs/kh_user/bottom/05.jpg" alt="" uk-cover>
